@@ -34,7 +34,7 @@ gem 'httparty'
 
 gem 'omniauth'
 gem 'omniauth-github'
-gem 'rb-readline'
+# gem 'rb-readline'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
