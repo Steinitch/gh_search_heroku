@@ -1,0 +1,12 @@
+<h1 class="cover-heading">Search GitHub</h1>
+
+<p class="lead">Enter a term below to search repositories on  GitHub</p>
+
+<div class="input-group mb-3">
+  <%= form_tag searches_path, class: "form-inline" do %>
+    <%= text_field_tag :query, nil, class: "form-control", 'aria-describedby' => "submit_btn", 'aria-label' => "Enter search query..." %>
+    <div class="input-group-append">
+      <%= submit_tag 'Search GitHub', class: "btn btn-outline-secondary", id: 'submit_btn' %>
+    </div>
+  <% end %>
+</div>
