@@ -1,0 +1,10 @@
+<header class="masthead mb-auto">
+  <div class="inner">
+    <h3 class="masthead-brand">GitHub Search for Teladoc</h3>
+    <nav class="nav nav-masthead justify-content-center">
+      <%= link_to "Home", root_path, class: "nav-link #{params[:controller] == 'sessions' ? 'active' : nil}" %>
+      <%= link_to "Search", searches_path, class: "nav-link #{params[:controller] == 'searches' ? 'active' : nil}" %>
+      <%= link_to "Logout", :logout, class: "nav-link" %>
+    </nav>
+  </div>
+</header>
