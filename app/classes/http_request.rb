@@ -1,4 +1,5 @@
 class HttpRequest
+
   include HTTParty
 
   attr_accessor :query
@@ -10,4 +11,5 @@ class HttpRequest
   def search_github
     HTTParty.get("https://api.github.com/search/repositories?q=#{query}&sort=stars&order=desc&per_page=15")
   end
+
 end
