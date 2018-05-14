@@ -16,7 +16,7 @@
         <td class="d-none d-sm-table-cell"><%= response['watchers'] %></td>
         <td class="d-none d-sm-table-cell"><%= response['forks'] %></td>
         <td>
-          <%= link_to(image_tag(response['owner']['avatar_url'], size: "30x30"), response['owner']['html_url'], target: '_blank') %>
+          <%= avatar_link(response['owner']['avatar_url'], "30x30", response['owner']['html_url']) %>
         </td>
       </tr>
     <% end %>
