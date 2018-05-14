@@ -1,28 +1,22 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple application to search github repositories, requiring github auth
 
-Things you may want to cover:
+* Ruby version 2.3.0
 
-* Ruby version
+* Rails version 4.2.5
 
-* System dependencies
+* git clone https://github.com/Steinitch/gh_search_heroku.git
 
-* Configuration
+* cd gh_search_heroku
 
-* Database creation
+* bundle exec rake db:migrate
 
-* Database initialization
+* bundle exec rake db:test:prepare
 
-* How to run the test suite
+* bundle exec rspec
 
-* Services (job queues, cache servers, search engines, etc.)
+* rails s
 
-* Deployment instructions
+* navigate webbrowser to localhost:3000
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
